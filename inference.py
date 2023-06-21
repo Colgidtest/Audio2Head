@@ -118,7 +118,7 @@ def get_audio_feature_from_audio(audio_path,norm = True):
         return cat
 
 def audio2head(audio_path, img_path, model_path, save_path):
-    temp_audio="./results/temp.wav"
+    temp_audio="/kaggle/working/Audio2Head/results"
     command = ("ffmpeg -y -i %s -async 1 -ac 1 -vn -acodec pcm_s16le -ar 16000 %s" % (audio_path, temp_audio))
     output = subprocess.call(command, shell=True, stdout=None)
 
