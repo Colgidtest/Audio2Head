@@ -242,7 +242,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--audio_path",default=r"/kaggle/input/pipeline/M6_04_16k..wav",help="audio file sampled as 16k hz")
     parser.add_argument("--img_path",default=r"/kaggle/input/pipeline/Elon_Musk_Royal_Society_crop2.jpeg", help="reference image")
-    parser.add_argument("--save_path",default=r"./results", help="save path")
+    parser.add_argument("--save_path",default=r"/kaggle/working/Audio2Head/results", help="save path")
     parser.add_argument("--model_path",default=r"/kaggle/input/checkpoints/audio2head.pth.tar", help="pretrained model path")
 
 
